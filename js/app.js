@@ -1,5 +1,6 @@
 console.log(
-    screen.width
+    document.getElementById("fruta").innerHTML,
+    document.getElementsByClassName("carro")[1].innerHTML
 )
 alert(screen.width)
 
