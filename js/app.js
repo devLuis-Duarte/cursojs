@@ -1,6 +1,18 @@
 var jslogo = document.createElement("img")
 jslogo.src = "js.png"
 
+var p = document.createElement("p")
+p.innerHTML = "Olá pessoal!"
+
+var img = document.createElement("img")
+img.src = "html.jpg"
+
+document.getElementById("conteudo").appendChild(p)
+document.getElementById("conteudo").appendChild(img)
+document.getElementById("conteudo").removeChild(img)
+
+
+
 var paragrafo = document.createElement("p")
 paragrafo.innerHTML = "Olá"
 
@@ -17,7 +29,8 @@ console.log(
 
     document.getElementById("futebol-europeu").querySelectorAll(".times")[1].innerHTML,
 
-    jslogo, paragrafo
+    jslogo, paragrafo,
+    
 
                                             
      //getElementById() retorna o elemento pelo id passado como parametro
@@ -36,6 +49,8 @@ console.log(
     //parametro informado
 
     //createElement() cria elementos como tags, a partir do parametro especificado na função 
+
+    //apendChild insere um elemento filho em um elemento pai
                                              
 )
 alert(screen.width)
