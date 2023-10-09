@@ -1,3 +1,9 @@
+var jslogo = document.createElement("img")
+jslogo.src = "js.png"
+
+var paragrafo = document.createElement("p")
+paragrafo.innerHTML = "Olá"
+
 console.log(
     document.getElementById("fruta").innerHTML,
     
@@ -9,7 +15,9 @@ console.log(
     
     document.querySelector("#p1").innerHTML,
 
-    document.getElementById("futebol-europeu").querySelectorAll(".times")[1].innerHTML
+    document.getElementById("futebol-europeu").querySelectorAll(".times")[1].innerHTML,
+
+    jslogo, paragrafo
 
                                             
      //getElementById() retorna o elemento pelo id passado como parametro
@@ -26,6 +34,8 @@ console.log(
     //querySelectorAll() retorna um objeto nodelist representando
     // todos os elementos do documento que estejam de acordo com o 
     //parametro informado
+
+    //createElement() cria elementos como tags, a partir do parametro especificado na função 
                                              
 )
 alert(screen.width)
