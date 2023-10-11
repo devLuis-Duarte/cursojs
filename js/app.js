@@ -62,6 +62,11 @@ console.log(
 )
 alert(screen.width)
 
+var lista = document.body.childNodes
+alert(lista[29].nodeType)
+alert(lista[29].nodeName)
+alert(lista[29].nodeValue)
+
 var fruta = document.getElementById("fruta")
 fruta.innerHTML = "Manga"
 fruta.style.color = "orange"
