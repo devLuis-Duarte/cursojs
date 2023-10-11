@@ -31,6 +31,8 @@ console.log(
 
     document.body.childNodes,
 
+    document.getElementById("sorocaba").parentNode.parentNode,
+
     jslogo, paragrafo,
     
 
@@ -58,6 +60,9 @@ console.log(
 
     //childNodes retorna os elementos nós de outro nó, por exemplo, body.childNodes retonará 
     //os nós filhos do nó body do em formato nodelist
+
+    //retorna o(s) elemento(s) pai(s) de um elemento filho(s) com o comando parentNode, em um
+    //conjunto de divs ele retornara a primeira div de um conjunto de divs, a div "pai"
                                              
 )
 alert(screen.width)
