@@ -29,6 +29,8 @@ console.log(
 
     document.getElementById("futebol-europeu").querySelectorAll(".times")[1].innerHTML,
 
+    document.body.childNodes,
+
     jslogo, paragrafo,
     
 
@@ -51,6 +53,11 @@ console.log(
     //createElement() cria elementos como tags, a partir do parametro especificado na função 
 
     //apendChild insere um elemento filho em um elemento pai
+
+    //removeChild remove um elemento filho em um elemento pai
+
+    //childNodes retorna os elementos nós de outro nó, por exemplo, body.childNodes retonará 
+    //os nós filhos do nó body do em formato nodelist
                                              
 )
 alert(screen.width)
