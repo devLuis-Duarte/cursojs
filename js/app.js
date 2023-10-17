@@ -12,7 +12,29 @@ var texto = document.createTextNode("Um texto qualquer")
 
 titulo.appendChild(texto)
 
-titulo.textContent = "Um novo texto"
+titulo.textContent = "Novo texto"
+
+var lista = document.getElementsByTagName("ul")[0] // lista na posicao 00 inclui apenas a primeira lista(ul)
+var itens = lista.children //pega todos os elementos filhos da variavel lista que traz a lista na posicao 0
+
+var novoItem = document.createElement("li") //cria novo elemento lista
+novoItem.textContent =  "Coca-Cola" // adiciona um texto ano novo item criado
+
+lista.insertBefore(novoItem, itens[0])//insere na lista onde atraves dos parametros passados, ele add o novo
+                                      //item da lista aos itens já adicionados e as chaves definem em qual 
+                                      //elemento da lista ele irá antecender
+                                      
+var lista2 = document.getElementsByTagName("ul")[1]
+var itens2 = lista2.children
+
+var novoItem = document.createElement("li")
+novoItem.textContent = "Bolacha"
+
+lista2.insertBefore(novoItem, itens2[0])
+
+
+
+
 
 document.getElementById("conteudo").appendChild(p)
 document.getElementById("conteudo").appendChild(img)
@@ -70,6 +92,8 @@ console.log(
 
 
     jslogo, paragrafo,
+
+    lista, itens, lista2, itens2,
     
 
                                             
