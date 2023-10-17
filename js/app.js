@@ -33,6 +33,35 @@ console.log(
 
     document.getElementById("sorocaba").parentNode.parentNode,
 
+    document.getElementById("btn-set").addEventListener("click", function(){
+        document.getElementById("title").setAttribute("class", "red")
+    }),
+
+    document.getElementById("btn-remove").addEventListener("click", function(){
+        document.getElementById("title").removeAttribute("class", "red")
+    }),
+
+    document.getElementById("btn-get").addEventListener("click", function(){
+        var v = document.getElementById("title").getAttribute("class")
+        document.getElementById("pg").innerHTML = v
+    }),
+
+   document.getElementById("btn-s").addEventListener("click", function(){
+        document.getElementById("pr").setAttribute("class", "greenyellow")
+   }),
+
+   document.getElementById("btn-r").addEventListener("click", function(){
+        document.getElementById("pr").removeAttribute("class", "greenyellow")
+   }),
+
+   document.getElementById("btn-g").addEventListener("click", function(){
+        var value = document.getElementById("pr").getAttribute("class")
+        document.getElementById("class").innerHTML = value
+   }),
+
+
+
+
     jslogo, paragrafo,
     
 
