@@ -21,16 +21,17 @@ var novoItem = document.createElement("li") //cria novo elemento lista
 novoItem.textContent =  "Coca-Cola" // adiciona um texto ano novo item criado
 
 lista.insertBefore(novoItem, itens[0])//insere na lista onde atraves dos parametros passados, ele add o novo
-                                      //item da lista aos itens já adicionados e as chaves definem em qual 
+                                      //item da lista aos itens já adicionados e os colchetes definem em qual 
                                       //elemento da lista ele irá antecender
                                       
 var lista2 = document.getElementsByTagName("ul")[1]
 var itens2 = lista2.children
 
-var novoItem = document.createElement("li")
-novoItem.textContent = "Bolacha"
+var novoItem2 = document.createElement("li")
+novoItem2.textContent = "Bolacha"
 
-lista2.insertBefore(novoItem, itens2[0])
+lista2.replaceChild(novoItem2, itens2[2]) //substitui o novo elemento pelo elemento localizado na posicao
+                                          //definida nas chaves do segundo parametro passado
 
 
 
