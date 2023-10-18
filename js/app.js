@@ -126,6 +126,28 @@ console.log(
     //conjunto de divs ele retornara a primeira div de um conjunto de divs, a div "pai"
                                              
 )
+
+// tipos de dados
+
+//string 
+var nome = "Luis Saldanha"
+//number para qualquer tipo: float, double, int
+var idade = 18
+//boolean que retorna verdadeiro ou falso
+var solteiro = true
+//array
+var frutas = ['goiaba', 'maca', 'pera']
+//object
+var carro = new Object()
+
+carro.fabricacao = "2025"
+carro.cor = "branco"
+//function
+var soma = function(a,b){
+    return a+b
+}
+alert(typeof(soma))
+
 alert(screen.width)
 
 var lista = document.body.childNodes
