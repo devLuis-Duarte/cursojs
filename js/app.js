@@ -1,3 +1,15 @@
+//Variaveis
+//escopo global, escopo local
+//let (valor variavel), const (valor fixo)
+let name = "Douglas"
+const n = "Felipe"
+
+if(true){
+    name = "Danilo"
+    n = "Leo"// erro, pois a variavel const possui valor constante e portanto nao deve ser alterada
+}
+
+
 var jslogo = document.createElement("img")
 jslogo.src = "js.png"
 
@@ -94,7 +106,7 @@ console.log(
 
     jslogo, paragrafo,
 
-    lista, itens, lista2, itens2,
+    lista, itens, lista2, itens2, name
     
 
                                             
