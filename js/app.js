@@ -1,14 +1,29 @@
 //Variaveis
 //escopo global, escopo local
 //let (valor variavel), const (valor fixo)
-let name = "Douglas"
+let number = "5511999999999"
 const n = "Felipe"
 
 if(true){
-    name = "Danilo"
-    n = "Leo"// erro, pois a variavel const possui valor constante e portanto nao deve ser alterada
+    number = "5511777777777"
+    //n = "Leo" , na tentativa de atribuir um novo valor a variavel n dara erro, 
+    //pois o tipo da variavel const possui valor constante e portanto nao deve ser alterada
 }
 
+//Array
+//Diz respeito a uma estrutura que armazena uma colecao de valores
+
+let meuArray = [
+    'notebook', //indice 0
+    1500,       //indice 1
+    {memoria: '16gb', hd: '100gb'},//indice 2
+                                    //indice para objeto com dois indices
+                                    //^
+                                    //|
+                                    //|
+
+    ['notebook dell', 'modelo 1000']// indice 3 (array dentro de array)
+]
 
 var jslogo = document.createElement("img")
 jslogo.src = "js.png"
@@ -106,7 +121,11 @@ console.log(
 
     jslogo, paragrafo,
 
-    lista, itens, lista2, itens2, name
+    lista, itens, lista2, itens2, 
+    
+    number, n,
+
+    meuArray[3][1] // acessando valor do objeto
     
 
                                             
