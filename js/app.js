@@ -72,7 +72,7 @@ let meuArray = [
     ['notebook dell', 'modelo 1000']// indice 3 (array dentro de array)
 ]
 
-/*Operadores 
+/*Operadores: 
 aritmeticos
 atribuicao
  */
@@ -83,6 +83,17 @@ let resultado
 let n1 = 8
 let n2 = 7
 let media
+
+let a = 5
+let b = 2
+
+a++ //incremento, add mais 1 unidade do valor da variavel "a"
+
+b-- //decremento, remove 1 unidade do valor da variavel "b"
+
+//a = a+b
+a+=b //é a mesma que essa operacao "a = a+b", também pode ser feito multiplicacao,
+     //divisao e subtracao como nos exemplos "a*=b", "a/=b" e "a-=b" etc.
 
 resultado = x-y
 media = (n1+n2)/2
@@ -191,7 +202,9 @@ console.log(
 
     meuArray[3][1], // acessando valor do objeto
 
-    resultado, media
+    resultado, media,
+
+    a, b
     
 
                                             
