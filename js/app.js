@@ -1,6 +1,7 @@
 //Variaveis
 //escopo global, escopo local
 //let (valor variavel), const (valor fixo)
+
 let number = "5511999999999"
 const n = "Felipe"
 
@@ -9,6 +10,52 @@ if(true){
     //n = "Leo" , na tentativa de atribuir um novo valor a variavel n dara erro, 
     //pois o tipo da variavel const possui valor constante e portanto nao deve ser alterada
 }
+
+//tipos de dados
+
+//string 
+var nome = "Luis Saldanha"
+//number para qualquer tipo: float, double, int
+var idade = 18
+//boolean que retorna verdadeiro ou falso
+var solteiro = true
+//array
+var frutas = ['goiaba', 'maca', 'pera']
+//object
+var carro = new Object()
+
+carro.fabricacao = "2025"
+carro.cor = "branco"
+//function
+var soma = function(a,b){
+    return a+b
+}
+
+//Objeto
+/* Um objeto é uma colecao de propriedades, e uma propriedade é uma associacao
+entre um nome (ou chave) e um valor. Um valor de propriedade pode ser uma funcao,
+que é entao considerado um metodo de objeto*/
+
+let pessoa = {
+    nome: "lucas",
+    idade: 17,
+    feliz: true,
+    pets: ['cachorro', 'gato'],
+    carros:{ //carro é um objeto dentro do objeto pessoa
+        camaro: { //camaro é um objeto dentro do objeto carros que esta dentro do objeto pessoas e ele possui
+                  //cor e placa
+            placa: 123456,
+            cor: 'amarelo',
+        }
+      },
+       andar: function(km){ //funcao andar dentro do objeto pessoa que recebe a km por parametro e exibe pelo
+                             //alert a quilometragem andada por uma pessoa
+            alert(pessoa.nome + " andou" + km + " km")
+    }
+
+}
+
+pessoa.andar(20) //chamada do metodo com o parametro da quilometragem (20)
 
 //Array
 //Diz respeito a uma estrutura que armazena uma colecao de valores
@@ -24,6 +71,21 @@ let meuArray = [
 
     ['notebook dell', 'modelo 1000']// indice 3 (array dentro de array)
 ]
+
+/*Operadores 
+aritmeticos
+atribuicao
+ */
+
+let x = 10
+let y = 5
+let resultado
+let n1 = 8
+let n2 = 7
+let media
+
+resultado = x-y
+media = (n1+n2)/2
 
 var jslogo = document.createElement("img")
 jslogo.src = "js.png"
@@ -125,7 +187,11 @@ console.log(
     
     number, n,
 
-    meuArray[3][1] // acessando valor do objeto
+    pessoa.carros.camaro.cor,
+
+    meuArray[3][1], // acessando valor do objeto
+
+    resultado, media
     
 
                                             
@@ -158,25 +224,6 @@ console.log(
                                              
 )
 
-// tipos de dados
-
-//string 
-var nome = "Luis Saldanha"
-//number para qualquer tipo: float, double, int
-var idade = 18
-//boolean que retorna verdadeiro ou falso
-var solteiro = true
-//array
-var frutas = ['goiaba', 'maca', 'pera']
-//object
-var carro = new Object()
-
-carro.fabricacao = "2025"
-carro.cor = "branco"
-//function
-var soma = function(a,b){
-    return a+b
-}
 alert(typeof(soma))
 
 alert(screen.width)
