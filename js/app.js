@@ -75,7 +75,7 @@ let meuArray = [
 /*Operadores: 
 aritmeticos
 atribuicao
- */
+*/
 
 let x = 10
 let y = 5
@@ -97,6 +97,27 @@ a+=b //é a mesma que essa operacao "a = a+b", também pode ser feito multiplica
 
 resultado = x-y
 media = (n1+n2)/2
+
+/* Operadores:
+logicos
+comparacao
+ternario*/
+
+let k = 5
+
+let l = 3
+
+let mdia = 8
+
+let frequencia = 80
+
+let idad = 16 
+
+let eleitor = (idade >= 16) ? "Pode votar" : "Nao pode votar" // verifica se a idade é maior ou igual a 16
+                                                              // "?", esse operador verificao se a condicao
+                                                              // dos parentes é verdadeira, e logo apos ele
+                                                              // vem a consequencia em caso positivo ("Pode votar") 
+                                                              //e depois dos ":" a consequencia em caso negativo ("Nao pode votar")
 
 var jslogo = document.createElement("img")
 jslogo.src = "js.png"
@@ -204,10 +225,32 @@ console.log(
 
     resultado, media,
 
-    a, b
-    
+    a, b,
 
-                                            
+    k == "5", 
+    
+    k === "5", // ""===" vai verificar se o tipo da variavel é igual ao da condicao
+               // nesse caso é false, pois o tipo e inteiro e o valor na condicao é string
+               //entao retorna "true"
+    
+    k != 4, //verifica se é diferente, nesse caso, retorna "false" por ser diferente do
+              //valor da variavel "k"
+
+    k !== "5",  // verifica se o tipo é diferente e retorna true, pois o tipo do valor
+              //da variavel k é diferente do da condicao
+              
+    l > 4, //verifica se é maior, nesse caso, retorna "false", pois o valor de "l" é menor que 4
+    l < 5, //verifica se é menor, nesse caso, retorna "true", pois o valor de "l" é menor que 5
+
+    mdia >= 7 && frequencia >= 80, // verifica se a "mdia" é maior ou igual à 7 e se a frequencia é
+                                  //maior ou igual à 80, nesse caso, retorna "true", por cumprir as
+                                  //condicoes
+    
+    mdia >= 8 || frequencia >= 100, // verifica se uma das condicoes é verdadeira, nesse caso, retorna
+                                   // "true", pois apenas uma condicao é satisfeita
+
+    
+    eleitor                                    
      //getElementById() retorna o elemento pelo id passado como parametro
 
     //getElementsByClassName() retorna o(s) elementos pelo nome da classe
