@@ -119,6 +119,41 @@ let eleitor = (idade >= 16) ? "Pode votar" : "Nao pode votar" // verifica se a i
                                                               // vem a consequencia em caso positivo ("Pode votar") 
                                                               //e depois dos ":" a consequencia em caso negativo ("Nao pode votar")
 
+/* Condicionais:
+if
+else
+switch case
+*/
+
+let pais = "Canada"
+let estado = "SP"
+
+/*if(pais == "Brasil")
+{
+    alert("sou brasileiro")
+}
+else if(estado == "SP")
+{
+    alert("sou paulistano")
+}
+else 
+{
+    alert("sou gringo")
+}*/
+
+switch (pais){
+    case 'Brasil':
+        alert("sou brasileiro")
+        break
+    case 'EUA':
+        alert("sou gringo")
+        break
+    default:
+        alert ("Padrao")
+        break
+}
+
+
 var jslogo = document.createElement("img")
 jslogo.src = "js.png"
 
